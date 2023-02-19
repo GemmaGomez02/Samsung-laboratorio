@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Account</title>
+	
+    <LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>
+
+    <script src="index.js"></script>
+
+    
+    
+  </head>
+  <body>
+    <div class="contenedor"  id="contenedor">
+    
+    <form onsubmit="return validarRegistro()">
+      <h1>Create Account</h1>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" onblur="validarNombre()" />
+      <div class="error" id="nombreError"></div>
+
+
+      <label for="correo">Email</label>
+      <input type="email" id="correo" name="correo" onblur="validarCorreo()" />
+      <div class="error" id="correoError"></div>
+
+
+      <label for="contrasena">Clave</label>
+      <input
+        type="password"
+        id="contrasena"
+        name="contrasena"
+        onblur="validarContrasena()"
+      />
+      <div class="error" id="contrasenaError"></div>
+
+      <label for="contrasenaConfirm">Confirme su clave</label>
+      <input
+        type="password"
+        id="contrasenaConfirm"
+        name="contrasenaConfirm"
+        onblur="validarConfirmContrasena()"
+      />
+      <div class="error" id="contrasenaConfirmError"></div>
+
+      <input type="submit" value="ENVIAR" />
+    </form>
+  </div> 
+  </body>
+</html>
+
+
+
